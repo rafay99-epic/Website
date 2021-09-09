@@ -3,6 +3,7 @@
 <head>
     <title>Resume Wesite Template</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
@@ -18,7 +19,7 @@
             <div class="user-box">
                 <img src="user-box/front-end2.jpeg">
                 <h1>Abdul Rafay</h1>
-                <p> &nbsp  Software Engineer</p>
+                <p align ="center">Software Engineer</p>
             </div>
         </div>
 
@@ -30,7 +31,7 @@
     <!---------------User Info Section------------------------>
 
     <section id="user-info">
-        <div class="nav-bar">
+        <div class="nav-bar" data-aos="slide-right">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#"><img src="user-box/Add%20a%20heading%20(1).png" height="50"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +59,7 @@
             </nav>
         </div>
         <!-------------------------------About------------------------->
-        <div class="about container" id="about">
+        <div class="about container" id="about"  data-aos="slide-left">
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="user-box/IMG_20190813_194948_045.jpg" class="profile-img">
@@ -126,7 +127,7 @@
         <!------------------------------Social Icons------>
 
 
-        <div class="social-icons">
+        <div class="social-icons" data-aos="slide-right">
             <ul>
                 <div  id = "demo" onclick="myFunction_twitter()">
                  <li>  <i class="fa fa-twitter"></i> </li> 
@@ -167,7 +168,7 @@
 
 
         <!------------------------------Resume------------->
-        <div class="resume" id="resume">
+        <div class="resume" id="resume" data-aos="slide-right">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -294,7 +295,7 @@
 
         <!-----------------Services----------------->
 
-        <div class="services" id="services">
+        <div class="services" id="services" data-aos="slide-left">
             <div class="container">
                 <h1 class="text-center">My Offered Services</h1>
                 <p class="text-center">Desktop Applications<br>Automate Task<br>Web Develpoment<br>Project Management<br>Android Application Development</p>
@@ -400,6 +401,16 @@
     <script>
         var scroll = new SmoothScroll('a[herf*="#"]');
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  });
+</script>
+
+
 </body>
 
 </html>
